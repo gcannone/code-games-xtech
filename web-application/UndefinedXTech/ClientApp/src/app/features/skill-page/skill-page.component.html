@@ -82,7 +82,7 @@
                 </mat-select>
               </mat-form-field>
 
-              <mat-form-field class="ml-3" appearance="fill">
+              <mat-form-field appearance="fill">
                 <mat-label>Level</mat-label>
                 <mat-select formControlName="levelID">
                   <mat-option *ngFor="let level of languagesLevel$ | async" [value]="level.id">
@@ -91,7 +91,7 @@
                 </mat-select>
               </mat-form-field>
 
-              <mat-checkbox class="ml-3" formControlName="preferred">Preferred</mat-checkbox>
+              <mat-checkbox formControlName="preferred">Preferred</mat-checkbox>
 
               <div *ngIf="!(last && i === 0)" class="delete-item">
                 <mat-icon class="delete-btn" (click)="deleteLanguage(i)">delete_forever</mat-icon>
